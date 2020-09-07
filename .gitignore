@@ -484,6 +484,8 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
+*.iml
+
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
