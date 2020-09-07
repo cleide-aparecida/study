@@ -16,7 +16,7 @@ public class AddContactPage extends BasePage{
         return this;
     }
     public AddContactPage digitarContato(String  contact) {
-        navegador.findElement(By.id("addmoredata")).findElement(By.name("contact")).sendKeys("+5535999999999");
+        navegador.findElement(By.id("addmoredata")).findElement(By.name("contact")).sendKeys(contact);
         return this;
     }
     public MePage clicarSalvar() {
