@@ -1,5 +1,6 @@
 package suporte;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +12,8 @@ public class Utils {
 
     public static WebDriver iniciarNavegador() {
         //Abrir o navegador
-        System.setProperty("webdriver.chrome.driver","./src/test/resources/chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
+        //System.setProperty("webdriver.chrome.driver","./src/test/resources/chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.manage().window().maximize();
         navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
